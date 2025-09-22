@@ -320,6 +320,8 @@ gap:60px;
 
 .contact, .social-media {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: column;
 }
 
@@ -488,7 +490,8 @@ body {
     gap: 100px;
     position: relative;
     margin-block: 50px;
-    padding: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     background-color: #BEAC97;
 }
 .gallery-pair {
