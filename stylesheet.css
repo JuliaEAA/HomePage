@@ -644,11 +644,12 @@ body {
     background-color: #45a049;
     }
     .contactcontainer {
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 20px;
     background-color: #EFE9DC;
-    padding: 50px;
-    width: 800px;
+    padding: 10px;
+    max-width: 100%;
     }
 
   /*********** Services Page ****************/
