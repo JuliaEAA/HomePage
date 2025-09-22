@@ -1,0 +1,1101 @@
+/************ HOME PAGE **********/
+html {
+    height: 100%;
+    background-color:#EFE9DB;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Rhodium Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rhodiumlibre/v21/1q2AY5adA0tn_ukeHcQHqpx6lELBe72g.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+
+@font-face {
+  font-family: 'Rhodium Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rhodiumlibre/v21/1q2AY5adA0tn_ukeHcQHqpx6lE3Be72g.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Rhodium Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rhodiumlibre/v21/1q2AY5adA0tn_ukeHcQHqpx6lEPBew.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/****** LOGO AND HAMBURGER MENU ********/
+header {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url("images/hero.png");
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center; /* centers logo horizontally */
+  align-items: flex-start; /* keeps everything at top */
+  box-sizing: border-box;
+}
+
+.vestige_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;    /* don’t let parent force a fixed width */
+}
+.vestige_logo img {
+  width: 100vw;        /* scales with screen width */
+  max-width: 500px;   /* cap on large screens */
+  min-width: 120px;   /* won’t get too tiny */
+  height: auto;
+}
+
+/* Hamburger pinned to the top-left */
+.burger-menu {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    color: black;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(255, 202, 77);
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: #0e5b10;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 1000;
+}
+.menu-toggle:checked ~ .mobile-menu-overlay {
+    display: block;
+}
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-image: linear-gradient(180deg, #273725, #486645);
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.mobile-menu  {
+    color: #486645;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.close-menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.menu-items {
+  margin-top: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+/****** ABOUT ME *******/
+.heading {
+    font-family: 'Rhodium Libre';
+    font-size: 40px;
+    color: #8D765B;
+}
+
+.sub-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: black
+}
+.about-me-text{
+  padding-right: 50px;
+
+}
+.about-me{
+    margin: 0px;
+    background-color: white;
+    padding: 0px;
+    background: none;
+}
+.about-me > .card {
+    background: white;
+    border-radius: 0;
+    margin: 0;
+    max-width: none;
+    
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+.card{
+display: flex;
+flex-wrap: nowrap;
+justify-content: flex-start;
+align-items: flex-start;
+max-width: 1200px;
+margin: 20px auto;
+border-radius: 8px;
+background-color: white;
+padding: 10px;
+gap:60px;
+}
+.answer {
+  display: none; /* Hidden by default */
+  padding: 15px;
+}
+
+.faq-card.is-open .answer {
+  display: block; /* Show when open */
+}
+.about-me-image {
+    margin: 28px;
+    height: 480px;
+    width: 350px;
+    border-radius: 4px;
+    padding-left: 20px;
+}
+.about-me-content{
+  flex: 1;
+  
+}
+.about-me > .card,
+.map-section > .card {
+    width: 100%;
+}
+/******* FAQ *******/
+.FAQ-image{
+    margin: 28px;
+    height: 450px;
+    width: 600px;
+    border-radius: 4px;
+    padding-right: 25px;
+}
+.FAQ-content{
+   flex: 1;
+   padding: 0;
+   padding-left: 50px;
+}
+.FAQ-text{
+  padding: 5px;
+  
+}
+.card.faq-card {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.faq-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.faq-item p {
+    margin: 0;
+    flex: 1;
+}
+.faq-arrow {
+    margin-left: 15px;
+    font-size: 1.2em;
+    border: solid #847869;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+/******** MAP *********/
+.map-section {
+    margin: 0;
+    padding: 0;
+    padding-left: 50px;
+    background: none;
+    font-family: "Rhodium Libre";
+}
+
+.map-section > .card {
+    background: white;
+    border-radius: 0;
+    margin: 0;
+    max-width: none;
+    
+    box-sizing: border-box;
+    padding: 10px 0 40px;
+}
+/******** FOOTER *********/
+
+.footer {
+  width: 100%;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.fat-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 0; /* equal top/bottom + left/right padding */
+  gap: 40px;            /* space between columns */
+  box-sizing: border-box;
+}
+
+.footerlogo {
+  width: clamp(150px, 50%, 300px);
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.social-media{
+    margin-right: 80px;
+}
+
+.contact, .social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact h2, .social-media h2 {
+  margin-bottom: 20px;
+}
+
+.contact p, .social-media p {
+  display: flex;
+  align-items: center; 
+  gap: 10px;           
+  margin: 5px 0;
+}
+@media (max-width: 768px) {
+  .fat-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .contact,
+  .social-media {
+    padding: 0; /* no extra left offset */
+    padding-bottom: 30px;
+  }
+}
+
+/******** END OF ELEMENTS *******/
+
+@media (max-width: 768px) {
+  .about-me > .card,
+  .map-section > .card {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .map-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .logo{
+     width: 100%;
+    height: auto;
+    display: block;
+    padding-top: 150px;
+    padding-right: 400px;
+  }
+    .card {
+    flex-direction: column;
+    align-items: center;
+    gap:0;
+  }
+    .about-me-image {
+    display: block;
+    margin: 0 auto 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 90%;
+    height: auto;
+  }
+  .about-me-content {
+    padding: 0;
+    margin: 0;
+  }
+.heading{
+   padding-left: 7%;
+}
+
+.about-me-text{
+  padding-left: 7%;
+}
+
+.sub-heading{
+  padding-left:7% ;
+}
+
+  .card.faq-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .FAQ-image {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    order: -1;
+    padding: 0;
+    display: block;
+  }
+  .FAQ-content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .faq-item{
+    padding: 20px;
+    margin: 0px;
+  }
+  .map-section iframe {
+    width: 100%;
+    min-width: 0;
+    max-width: 100vw;
+    height: 400px;
+    width: 380px; /* or adjust as needed */
+    display: block;
+    margin: 0 auto;
+}
+}
+/*********** REVIEWS PAGE ************/
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rhodium+Libre&display=swap');
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.vestige_logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;     
+    padding: 0;           /* responsive vertical padding */
+    width: 100%;
+    max-width: 1754px;
+    margin: 0 auto;         /* center the container itself */
+    box-sizing: border-box;
+}
+.vestige_logo img {
+    max-width: 500px;
+    margin: 70px 0 0 0;
+    height: auto;
+    display: block;
+    align-items: center;
+}
+
+.before_header { 
+    display: flex;
+    background-color: #8E765D;
+    position: relative;
+    max-width: 1754px;
+    justify-content: center;
+}
+.before_header h1 { /* Before & After */
+    font-size: 40px;
+    font-family: "Rhodium Libre", serif;
+    font-weight: 200;
+    font-style: normal;   
+    color: #ffffff;
+    flex-wrap: wrap;
+    text-shadow: 6px 6px #5D4E3D;
+}
+.p1 { /* text below before and after heading */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+}
+/********* GALLERY SECTION ******/
+.gallery { /* Before and after pictures */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: fit-content;
+    gap: 100px;
+    position: relative;
+    margin-block: 50px;
+    padding: 60px;
+    background-color: #BEAC97;
+}
+.gallery-pair {
+    display: flex;
+    flex-direction: row;
+    gap: 0px; /* gap between before/after */
+}
+.gallery-before{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; 
+    width: 200px;
+    height: 270px;
+    object-fit: cover;
+    margin: 0; /* Remove extra margins for even grid */
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.5s ease;    
+}
+.gallery-after {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 200px;
+    height: 270px;
+    object-fit: cover;
+    margin: 0; /* Remove extra margins for even grid */
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.5s ease;  
+}
+.gallery-before:hover,
+.gallery-after:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgb(255, 202, 77);
+    transition:all 0.5s ease;
+}
+/********* REVIEWS SECTION *********/
+.reviews {
+  background-image: url(https://cdn.wallpaperdirect.com/asset/img/product/178817/tiled/eijffinger-florals-dark-green-wallpaper-0@lg.webp);
+  background-size: cover;
+  background-blend-mode: darken;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.reviews-heading {
+  font-family: 'Rhodium Libre', serif;
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: 200;
+  font-style: normal;
+  color: #ffffff;
+  flex-wrap: wrap;
+  text-shadow: 6px 6px #2F3834;                 /* remove default margins */ 
+}
+
+.review {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.review p {
+  margin: 0;
+}
+/****** QR SECTION ********/
+.qr { /* Box behind qr codes */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 60px;
+    background-color: #AD9476;
+    box-sizing: border-box;
+    min-width: 420px;
+}
+.card-content { /* text in between qr codes */
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    min-width: 420px;
+}
+.social-qr { /* qr code section */
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-width: fit-content;
+}
+.insta-qr, .fb-qr { /* qr codes */
+    height: 250px;
+    width: auto;
+    box-sizing: border-box;
+    min-width: fit-content;
+    }
+
+/********* Contact PAGE ************/
+.contact_logo { 
+    padding-top: 50px;           /* responsive vertical padding */
+    padding-bottom: 0;
+    padding-left: 30px;
+    width: 400px;
+    }
+    .contact_logo img {
+    max-width: 500px;
+    height: auto;
+    }
+    body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: large;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    }
+    h3 {
+    margin: 20px;
+    padding-left: 60px;
+    font-size: 30px;
+    }
+    input[type=text], select, textarea {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    }
+    input[type=submit] {
+    background-color: #1C4305;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    input[type=submit]:hover {
+    background-color: #45a049;
+    }
+    .contactcontainer {
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #EFE9DC;
+    padding: 50px;
+    width: 800px;
+    }
+
+  /*********** Services Page ****************/
+  html {
+    height: 100%;
+    background-color:#EFE9DB;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Rhodium Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rhodiumlibre/v21/1q2AY5adA0tn_ukeHcQHqpx6lELBe72g.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+
+@font-face {
+  font-family: 'Rhodium Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rhodiumlibre/v21/1q2AY5adA0tn_ukeHcQHqpx6lE3Be72g.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Rhodium Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rhodiumlibre/v21/1q2AY5adA0tn_ukeHcQHqpx6lEPBew.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    color: black;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+/******* BOOKING APPOINTMENTS *******/
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.appointment {
+
+  max-width: 1000px;
+  margin: auto;
+  padding: auto;
+   margin-bottom: 80px; 
+}
+
+.appointment h1 {
+  font-family: 'Rhodium Libre', serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+  
+}
+
+.select-label {
+  display: block;
+  margin-bottom: 10px;
+  
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+
+.service-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.categories {
+  flex: 1;
+  max-width: 200px;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories li {
+  padding: 10px 0;
+  border-bottom: 1px solid #d3c9b5;
+  color: #7a6b5a;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.categories li:hover {
+  color: #3a2e23; 
+}
+
+.categories li.active {
+  color: black;
+  font-weight: bold;
+}
+
+.services {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d3c9b5;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.service-item span {
+  flex: 1;
+}
+
+.service-item .price {
+  text-align: right;
+  flex: 0 0 100px;
+}
+
+.service-item input[type="checkbox"] {
+  flex: 0 0 30px;
+}
+
+.book-btn {
+  margin-top: 30px;
+  padding: 16px 70px;
+  background-color: #1C4305;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start; 
+  transition: background 0.3s ease;
+
+}
+
+.book-btn:hover {
+  background-color: #27660A; 
+}
+/******** BOOKING END *******/
+
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto; 
+    padding: 10px 0;
+  }
+
+  .logo{
+     width: 250px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    }
+  
+   .appointment {
+    padding: 10px 15px;
+    margin-bottom: 60px;
+  }
+
+  .appointment h1 {
+    font-size: 22px;
+  }
+
+  .search-box input {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .heading{
+   padding-left: 7%;
+}
+  
+  .service-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .categories {
+    max-width: 100%;
+  }
+
+  .categories li {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .services {
+    gap: 10px;
+  }
+
+  .service-item {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .service-item .price {
+    flex: 0 0 auto;
+    text-align: left;
+  }
+
+  .service-item input[type="checkbox"] {
+    flex: 0 0 auto;
+  }
+
+.sub-heading{
+  padding-left:7% ;
+}
+
+.service-menu {
+    flex-direction: column;
+  }
+
+  .categories {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .service-item {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .book-btn {
+    align-self: center;  
+    width: 100%;         
+    max-width: 300px;
+    padding: 14px 0;
+    font-size: 15px;
+  }
+  .service-item .price,
+  .service-item input[type="radio"] {
+    text-align: left;
+  }
+
+    .search-box input {
+    width: 100%;     
+    max-width: 350px; 
+    margin: 0 auto;  
+    
+  }
+}
+/****** Get Inspired *********/
+
+body{
+    background-color:#EFE9DB ;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rhodium Libre', serif;
+}
+.logo {
+    display: flex;
+    justify-content: center;   /* centers the image inside logo div */
+    align-items: center;
+    flex: 1;                   /* let it expand between burger & button */
+    margin: 70px 0 0 0;                 /* remove extra margin */
+    padding: 0; 
+    width: auto;               /* don’t stretch full width */
+    max-width: none;           /* remove the hard limit */
+    box-sizing: border-box;
+}
+.logo img {
+    max-width: 500px;   /* adjust size as needed */
+    height: auto;
+    display: block;
+}
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-block: 40px; /* adjust as needed */
+    max-width: 1274px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.picture-item {
+    flex: 0 1 calc(33.333% - 6.67px); 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.picture-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    min-width: 0;
+}
+@media (max-width: 1274px) {
+    .picture-item {
+        flex: 0 1 calc(50% - 5px);
+    }
+}
+@media (max-width: 600px) {
+    .picture-item {
+        flex: 0 1 100%;
+    }
+}
+.curlyhair,
+.coloredhair,
+.boycut,
+.shortwithplant,
+.bridehair,
+.bangs{
+    border-radius: 20px;
+}
+.faceshape{
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.faceshape-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pictures-section {
+    max-width: 1274px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
+}
+.pictures-section header h1 {
+    text-align: left;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 6vw;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    word-break: break-word;
+}
+
+.back-box{
+    background-color: rgba(255, 255, 255, 0.361);
+    border-radius: 20px;
+    padding: 2rem 25px;
+    margin: 0 16px;
+}
+
+.box-content{
+ width: 90%;
+ max-width: 1274px;
+ margin:auto; 
+}
+.inspiration{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-left: -20px;
+}
+
+.dekstop-icon{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px; 
+}
+
+.dekstop-icons{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px; 
+}
+
+.logo{
+  width: 300px;
+  height: 150px;
+  margin-left: -30px;
+}
+
+.faceshape-section .back-box {
+    max-width: 1200px; /* or your preferred width */
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 1.3rem;
+}
+/****** certifications ********/
+.diplomas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 60px; /* adjust as needed */
+    max-width: 1274px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.classcard {
+  font-family: 'Rhodium Libre', serif;
+}
+.column img {
+  width: 350px;
+  height: 280px;
+  padding: 30px;
+}
+@media (max-width: 1274px) {
+    .diplomas {
+        flex: 0 1 calc(50% - 5px);
+    }
+}
+@media (max-width: 600px) {
+    .diplomas {
+        flex: 0 1 100%;
+    }
+}
+

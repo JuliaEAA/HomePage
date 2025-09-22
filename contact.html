@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <meta name="description" content="Discover Vestige Studio in Aarhus, where haircare meets style. Expert cuts, color, and treatments tailored to highlight your natural beauty.">
+        <title>Vestige Studio | Contact</title>
+    </head>
+    <body>
+        <div class="contact-container"></div>
+        <div class="top-bar">
+           <label for="menu-toggle" class="burger-menu">&#9776;</label>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
+        <div class="mobile-menu-overlay">
+        <nav class="mobile-menu">
+            <label for="menu-toggle" class="close-menu">&times;</label>
+            <a class="menu-items" href="index.html">Home</a>
+            <a class="menu-items" href="certification.html">Certification</a>
+            <a class="menu-items" href="services.html">Services</a>
+            <a class="menu-items" href="services.html">Booking/Services</a>
+            <a class="menu-items" href="reviews.html">Reviews</a>
+            <a class="menu-items" href="getinspired.html">Get Inspired</a>
+            <a class="menu-items" href="contact.html">Contact</a>
+        </nav>
+        </div>
+        <div class=".contact_logo"></div>
+        <a class="vestige_logo" href="/index.html"><img width='500' height='200' src='/Review_Images/Vestigelogo.png' alt="vestige logo"></a>
+        <h3>Contact Form</h3>
+
+    <div class="contactcontainer">
+    <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="contactreason">Contact Reason</label>
+        <select id="contactreason" name="Contact Reason">
+        <option value="Choose">Choose Option</option>
+        <option value="Reschedule Appointment">Reschedule Appointment</option>
+        <option value="Cancel Appointment">Cancel Appointment</option>
+        <option value="Questions">Questions</option>
+        <option value="other">Other</option>
+        </select>
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+    </body>
+</html>
